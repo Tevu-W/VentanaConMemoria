@@ -1,5 +1,6 @@
 package dad.javafx.fxml.VentanaConMemoria;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -44,20 +45,16 @@ public class VentanaConMemoriaController implements Initializable {
 		redSlider.valueProperty().addListener((o, ov, nv) -> {
 			view.setStyle("-fx-background-color: rgb(" + redSlider.getValue() + "," + greenSlider.getValue() + ", "
 					+ blueSlider.getValue() + ");");
-			// System.out.println(redSlider.getValue());
-			System.out.println(System.getProperty("user.home")); // C:\Users\Tevu
 		});
 
 		greenSlider.valueProperty().addListener((o, ov, nv) -> {
 			view.setStyle("-fx-background-color: rgb(" + redSlider.getValue() + "," + greenSlider.getValue() + ", "
 					+ blueSlider.getValue() + ");");
-			// System.out.println(greenSlider.getValue());
 		});
 
 		blueSlider.valueProperty().addListener((o, ov, nv) -> {
 			view.setStyle("-fx-background-color: rgb(" + redSlider.getValue() + "," + greenSlider.getValue() + ", "
 					+ blueSlider.getValue() + ");");
-			// System.out.println(blueSlider.getValue());
 		});
 
 	}
